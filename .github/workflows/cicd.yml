@@ -1,4 +1,4 @@
-name: first github code
+name: variable in gha
 
 on:
   push:
