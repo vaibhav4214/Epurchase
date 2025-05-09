@@ -1,0 +1,11 @@
+name: check code proper or not
+on: 
+  push:
+    branches:
+      - main
+jobs: 
+  run-variable:
+    runs-on: ubantu-latest
+    steps:
+    - name: checkout code
+      uses: action/checlout@v3
