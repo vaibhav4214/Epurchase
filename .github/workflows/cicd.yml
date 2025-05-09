@@ -11,8 +11,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: one line code
-        run: echo executed
+
+      - name: setting up node js
+        uses:  actions/setup-node@v3
+        with:
+          node-cersion: 22.15.0
+
+      - run: npm install 
+      - run: npm start  
       
      
   
