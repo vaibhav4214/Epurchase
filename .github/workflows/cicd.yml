@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: checkout code
-      run:  $check
+      run:  "$check"
      
     
