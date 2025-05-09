@@ -1,11 +1,14 @@
-name: check code proper or not
-on: 
+name: first github code
+
+on:
   push:
     branches:
       - main
-jobs: 
-  run-variable:
-    runs-on: ubantu-latest
+
+jobs:
+  my_build:
+    runs-on: ubuntu-latest
     steps:
     - name: checkout code
-      uses: action/checlout@v3
+      uses: actions/checkout@v3
+    
