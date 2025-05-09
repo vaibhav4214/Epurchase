@@ -2,15 +2,17 @@ name: variable in gha
 
 on:
   push:
-    branches:
-      - main
-env:
-  check: vaibhav
+    branches: [main]
+  workflow_dispatch:
+
 jobs:
   my_build:
     runs-on: ubuntu-latest
     steps:
-    - name: checkout code
-      run:  "$check"
+      uses: actions/checkout@v3
+      name: run one line
+      run:  echo "vaibhav"
+  
+      
      
-    
+     
