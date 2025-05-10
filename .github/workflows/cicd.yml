@@ -15,7 +15,7 @@ jobs:
       - name: setting up node js
         uses:  actions/setup-node@v3
         with:
-          node-cersion: 22.15.0
+          node-cersion: 22
 
       - run: npm install 
       - run: npm start  
